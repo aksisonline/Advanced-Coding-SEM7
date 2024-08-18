@@ -17,7 +17,7 @@ void moveZeros(int *arr, int n)
     }
 }
 
-int _3LAB2()
+int main()
 {
     int n;
     printf("Enter the size of array: ");

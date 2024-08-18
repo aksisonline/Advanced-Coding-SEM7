@@ -27,7 +27,7 @@ int maxSubarraySum(int arr[], int size)
     return maxSum;
 }
 
-int _3LAB3()
+int main()
 {
     int n;
     printf("Enter the size of array: ");

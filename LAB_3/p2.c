@@ -28,7 +28,7 @@ int isSubsequence(char *str1, char *str2)
     }
 }
 
-int _2LAB3()
+int main()
 {
     char str1[10], str2[10];
 

@@ -22,7 +22,7 @@ int isSubstring(const char *str1, const char *str2)
     return 0;
 }
 
-int _1LAB3()
+int main()
 {
     char str1[10], str2[10];
 
