@@ -12,7 +12,6 @@ Use the command:
 compile_and_run example.c
 ```
 
-
 To make the command dynamic for different C files, you can use a shell function instead of an alias. Here's how you can set it up:
 
 ### For `bash`:
@@ -23,7 +22,7 @@ To make the command dynamic for different C files, you can use a shell function 
    ```
 2. Add the following function to the file:
    ```bash
-   compile_and_run() {
+   cnr() {
        local filename="${1%.c}"
        gcc "$filename.c" -o "$filename" && ./"$filename"
    }
@@ -37,7 +36,7 @@ To make the command dynamic for different C files, you can use a shell function 
 Now, you can use this command with any C file by passing the filename (without the `.c` extension) as an argument:
 
 ```bash
-compile_and_run p2
+cnr p2
 ```
 
 This will compile `p2.c`, create the executable `p2`, and run it.

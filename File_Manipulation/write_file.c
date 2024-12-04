@@ -5,14 +5,14 @@ int main() {
     FILE *file;
 
     // Using fputc() to write a single character
-    file = fopen("output_fputc.txt", "w");
-    fputc('A', file);
-    fclose(file);
+    // file = fopen("output_fputc.txt", "w");
+    // fputc('A', file);
+    // fclose(file);
     
     // Using fputs() to write a string
-    // file = fopen("output_fputs.txt", "w");
-    // fputs("Hello, World!", file);
-    // fclose(file);
+    file = fopen("output_fputs.txt", "w");
+    fputs("Hello, World!", file);
+    fclose(file);
 
     // Using fprintf() to write formatted output
     // file = fopen("output_fprintf.txt", "w");
